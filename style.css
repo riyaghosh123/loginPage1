@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Lato:wght@300&family=Merriweather+Sans&family=Montserrat:wght@800&family=Poppins:ital,wght@0,600;0,700;1,600&family=Roboto:wght@100&family=Sacramento&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "poppins",sans-serif;
+    background: linear-gradient(135deg, #FAB2FF 10%, #0008C1 100%);
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    width: 100vw;
+    height: 100vh;
+}
+.page{
+    max-width: 360px;
+    margin: 0 auto;
+}
+.form-container{
+    width: 650px;
+    display: flex;
+    align-items: stretch;
+    color: #002333;
+}
+.left-form{
+   
+    padding: 20px;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    background: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* .left-form::before{
+    width: 450px;
+    content: --;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(240deg, rgba(255,255,255,0), rgba(0,0,0,1),100%);
+} */
+.content{
+    color: #ffffff;
+    z-index: 0;
+}
+.content h3{
+    font-size: 40px;
+    line-height: 48px;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 50px;
+    letter-spacing: -0.5;
+}
+.content h3{
+    border-bottom: 5px solid purple;
+
+    /* content: --;
+    width: 85%;
+    height: 6px;
+    background: purple;
+    position: absolute;
+    bottom: -25%;
+    left: 0%; */
+}
+ /* form-right */
+ .right-form{
+    
+   flex-basis: 50%;
+    padding: 25px;
+    background-color: #ffffff;
+ }
+ .social-login{
+    border-bottom: 2px solid #002333;
+ }
+ .social-item{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    height: 40px;
+    align-items: center;
+    border: 1px solid rgb(59,70,73);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+ }
+ .social-item .icon{
+    flex-basis: 20%;
+ }
+ .social-item .icon img{
+    height: 30px;
+    width: 30px;
+ }
+ .social-handel{
+    flex-basis: 80%;
+ }
+ .login-form{
+    padding-top: 20px;
+ }
+ .user-login input{
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    font-family: "poppins";
+    font-weight: 500;
+    color: #002333;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid rgb(220, 222, 225);
+ }
+ .user-login input:focus{
+    outline: none;
+    border-color: purple ;
+ }
+ .user-login input::placeholder{
+    color: #2c3333;
+    font-size: 16px;
+ }
+ .remember-me{
+    margin-bottom: 20px;
+    padding: 10px 0px;
+ }
+ .remember-me label{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+ }
+ .remember-me label input{
+   appearance: none;
+   width: 24px;
+   height: 24px;
+   border: 1px solid purple;
+   border-radius: 2px;
+   position: relative;
+ }
+ .remember-me label input::before{
+    content: "\2713";
+    font-size: 21px;
+    color: #ffffff;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 3px;
+    top: -4px;
+    visibility: none;
+    opacity: 0;
+ }
+ .remember-me label input:checked{
+    background-color: purple;
+ }
+ .remember-me label input:checked::before{
+    visibility: visible;
+    opacity: 1;
+ }
+ .btn{
+    width: 100%;
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: purple;
+    padding: 0px 20px;
+    height: 40px;
+    border: 1px solid #002333;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+ }
+ .btn:hover{
+    opacity: 0.9;
+ }
+ .fp-link{
+    font-size: 18px;
+    font-weight: 700;
+    color: #002333;
+    text-decoration: none;
+    margin-bottom: 20px;
+ }
+ .singup{
+    margin-top: 20px;
+ }
+ .singup p{
+    font-size: 14px;
+ }
+ .singup p a{
+    font-weight: 700;
+    color: #002333;
+ }
+ .singup p a:hover{
+    color: purple;
+ }
+ /* responsive */
+ @media (max-width:678px){
+    body{
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+    .page{
+        max-width: 400px;
+        padding-top: 20px;
+    }
+    .form-container{
+        position: relative;
+    }
+    .left-form .content{
+        display: none;
+    }
+    .left-form{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .left-form::before{
+        background: linear-gradient(135deg, #fab2ff 10%, blue 100%);
+        opacity: 0.5;
+    }
+    .right-form{
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(245,245,245,0.7);
+    }
+}
